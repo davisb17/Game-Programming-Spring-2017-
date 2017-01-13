@@ -1,0 +1,7 @@
+
+#Compiled Files
+*.exe
+
+#Binary Folder
+[Bb]in/
+[Oo]bj/
