@@ -1,1 +1,8 @@
 C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\bin\Debug\A01 - Connect4.exe.config
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\obj\Debug\A01 - Connect4.csprojResolveAssemblyReference.cache
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\obj\Debug\A01___Connect4.Properties.Resources.resources
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\obj\Debug\A01 - Connect4.csproj.GenerateResource.Cache
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\bin\Debug\A01 - Connect4.exe
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\bin\Debug\A01 - Connect4.pdb
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\obj\Debug\A01 - Connect4.exe
+C:\Users\Brock\Google Drive\CompSci\Game Programming\A01 - Connect4\A01 - Connect4\obj\Debug\A01 - Connect4.pdb
