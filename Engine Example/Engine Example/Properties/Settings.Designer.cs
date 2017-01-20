@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace A01___Connect4.Properties
+namespace Engine_Example.Properties
 {
 
 

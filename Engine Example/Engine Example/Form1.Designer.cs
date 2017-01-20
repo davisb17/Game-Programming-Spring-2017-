@@ -1,4 +1,4 @@
-﻿namespace A01___Connect4
+﻿namespace Engine_Example
 {
     partial class Form1
     {
