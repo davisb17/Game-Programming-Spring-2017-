@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,26 +15,48 @@ namespace Engine_Example
     {
         Sprite main = new Sprite();
 
+        public static Form form;
+        public static Thread thread;
+
+        public static int fps = 30;
 
         public Form1()
         {
             InitializeComponent();
             DoubleBuffered = true;
-            //UpdateSize();
-            Box b = new Box();
-            b.X = 100;
-            b.Y = 100;
-            main.Add(b);
-            Box b2 = new Box();
-            b2.X = 5;
-            b2.Y = 5;
-            b2.Scale = .2;
-            b.Add(b2);
+            form = this;
+            thread = new Thread(new ThreadStart(run));
+
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            thread.Abort();
+        }
+
+        public static void run()
+        {
+            DateTime last = DateTime.Now;
+            DateTime now = last;
+            TimeSpan frameTime = new TimeSpan(10000000 / fps);
+            while (true)
+            {
+                now = DateTime.Now;
+                TimeSpan diff = now - last;
+
+                double calcFPS = 1000.0 / diff.TotalMilliseconds;
+
+                if (diff.Ticks<frameTime.Ticks)
+                    Thread.Sleep((frameTime-diff).Milliseconds);
+                
+                form.Invoke(new MethodInvoker(form.Refresh));
+                last = now;
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            //e.Graphics.DrawRectangle(Pens.Black, 0, 0, 100, 100);
             main.Render(e.Graphics);
         }
 
