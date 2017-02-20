@@ -15,8 +15,6 @@ namespace A01_StressTest
     {
         public static readonly double set_FPS = 30.0;
 
-        Sprite main = new Sprite();
-
         public static Form form;
         public static Thread timeThread;
 
@@ -54,7 +52,7 @@ namespace A01_StressTest
 
                 diff = current - last;
                 if (calcFPS < 100)
-                    calcFPS = calcFPS * .95 + (1000.0 / diff.TotalMilliseconds) * .05;
+                    calcFPS = calcFPS * .90 + (1000.0 / diff.TotalMilliseconds) * .10;
                 else
                     calcFPS = 1000.0 / diff.TotalMilliseconds;
 
