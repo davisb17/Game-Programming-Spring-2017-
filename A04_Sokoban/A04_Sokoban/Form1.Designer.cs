@@ -1,4 +1,4 @@
-﻿namespace A03_BasicEngine
+﻿namespace A04_Sokoban
 {
     partial class Form1
     {
