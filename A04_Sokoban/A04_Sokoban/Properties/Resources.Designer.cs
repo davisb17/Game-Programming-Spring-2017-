@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace A04_Sokoban.Properties
-{
-
-
+namespace A04_Sokoban.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,301 @@ namespace A04_Sokoban.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("A04_Sokoban.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box {
+            get {
+                object obj = ResourceManager.GetObject("box", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap elephant {
+            get {
+                object obj = ResourceManager.GetObject("elephant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap final {
+            get {
+                object obj = ResourceManager.GetObject("final", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goal {
+            get {
+                object obj = ResourceManager.GetObject("goal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///w B    w
+        ///w    b w
+        ///w  g   w
+        ///w  g   w
+        ///w b    w
+        ///w c    w
+        ///w   ww w
+        ///wwwwwwww.
+        /// </summary>
+        internal static string lvl0 {
+            get {
+                return ResourceManager.GetString("lvl0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwww
+        ///wwwg  w
+        ///www   w
+        ///w bBb w
+        ///w   www
+        ///wc gwww
+        ///wwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl1 {
+            get {
+                return ResourceManager.GetString("lvl1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///w   w  w
+        ///w     gw
+        ///w bb  cw
+        ///w w   gw
+        ///wwwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl10 {
+            get {
+                return ResourceManager.GetString("lvl10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwww
+        ///w   gw
+        ///w bbcw
+        ///w  w w
+        ///wg   w
+        ///wwwwww
+        ///.
+        /// </summary>
+        internal static string lvl11 {
+            get {
+                return ResourceManager.GetString("lvl11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///www  www
+        ///ww     w
+        ///w  cbbgw
+        ///w   w gw
+        ///wwwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl12 {
+            get {
+                return ResourceManager.GetString("lvl12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///w   w gw
+        ///w   bbgw
+        ///wwww  cw
+        ///wwwww  w
+        ///wwwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl13 {
+            get {
+                return ResourceManager.GetString("lvl13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwww
+        ///w   gw
+        ///w bbcw
+        ///w  wgw
+        ///wwwwww
+        ///.
+        /// </summary>
+        internal static string lvl2 {
+            get {
+                return ResourceManager.GetString("lvl2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///w     gw
+        ///w   bbcw
+        ///w  w  gw
+        ///wwwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl3 {
+            get {
+                return ResourceManager.GetString("lvl3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwww
+        ///w     w
+        ///w  bb w
+        ///w b bcw
+        ///wggwwww
+        ///wggwwww
+        ///wwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl4 {
+            get {
+                return ResourceManager.GetString("lvl4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwww
+        ///w   www
+        ///wggbbgw
+        ///w bbc w
+        ///w   gww
+        ///wwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl5 {
+            get {
+                return ResourceManager.GetString("lvl5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwww
+        ///w   gw
+        ///w bbgw
+        ///w bcgw
+        ///wwwwww
+        ///.
+        /// </summary>
+        internal static string lvl6 {
+            get {
+                return ResourceManager.GetString("lvl6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwwww
+        ///w     gw
+        ///w  bb cw
+        ///w  w  gw
+        ///wwwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl7 {
+            get {
+                return ResourceManager.GetString("lvl7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwww
+        ///wg gggw
+        ///w b w w
+        ///wbwbbcw
+        ///w    ww
+        ///w   www
+        ///wwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl8 {
+            get {
+                return ResourceManager.GetString("lvl8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wwwwwww
+        ///w    gw
+        ///w  bbgw
+        ///w  w cw
+        ///wwwwwww
+        ///.
+        /// </summary>
+        internal static string lvl9 {
+            get {
+                return ResourceManager.GetString("lvl9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wall {
+            get {
+                object obj = ResourceManager.GetObject("wall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

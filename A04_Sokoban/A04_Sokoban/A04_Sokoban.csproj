@@ -49,11 +49,16 @@
     <Compile Include="Engine.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Engine.Designer.cs">
+      <DependentUpon>Engine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SlideSprite.cs" />
     <Compile Include="Sprite.cs" />
+    <Compile Include="TextBox.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +81,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elephant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl0.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl6.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl7.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl8.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl9.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl10.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl11.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl12.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lvl13.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

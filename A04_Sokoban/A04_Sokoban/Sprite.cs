@@ -47,6 +47,21 @@ namespace A04_Sokoban
             parent.children.Remove(this);
         }
 
+        public void KillChildren()
+        {
+            try
+            {
+                foreach (Sprite s in children)
+                {
+                    s.KillChildren();
+                    s.Kill();
+                }
+                children = new List<Sprite>();
+            }
+            catch { }
+            
+        }
+
         //Calls Paint on itself then Render on children
         public void Render(Graphics g)
         {

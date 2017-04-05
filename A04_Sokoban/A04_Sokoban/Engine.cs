@@ -8,14 +8,14 @@ using System.Linq;
 
 namespace A04_Sokoban
 {
-    public class Engine : Form
+    public partial class Engine : Form
     {
         public static Form form;
         public static Thread renderThread;
         public static Thread updateThread;
         public static Sprite canvas = new Sprite();
         public static int target_fps = 30;
-
+        
         public Engine()
         {
             InitializeComponent();
@@ -61,7 +61,11 @@ namespace A04_Sokoban
                     Thread.Sleep((frameTime - diff).Milliseconds);
                 last = DateTime.Now;
 
-                canvas.Update();
+                try
+                {
+                    canvas.Update();
+                }
+                catch { }
             }
         }
 
@@ -71,13 +75,11 @@ namespace A04_Sokoban
             updateThread.Abort();
             base.OnClosed(e);
         }
-
-        /*
+		
         protected override void OnResize(EventArgs e)
         {
             Refresh();
         }
-        */
 
         protected override void OnPaint(PaintEventArgs e)
         {
