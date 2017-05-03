@@ -34,6 +34,7 @@ namespace Engine
             DateTime last = DateTime.Now;
             DateTime now = last;
             TimeSpan frameTime = new TimeSpan(10000000 / target_fps);
+            Thread.Sleep(500);
             while (true)
             {
                 DateTime temp = DateTime.Now;
@@ -60,7 +61,7 @@ namespace Engine
                 if (diff.TotalMilliseconds < frameTime.TotalMilliseconds)
                     Thread.Sleep((frameTime - diff).Milliseconds);
                 last = DateTime.Now;
-
+                
                 canvas.Update();
             }
         }
@@ -81,7 +82,5 @@ namespace Engine
         {
             canvas.Render(e.Graphics);
         }
-
     }
-
 }

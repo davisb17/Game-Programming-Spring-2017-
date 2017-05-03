@@ -46,6 +46,7 @@ namespace Engine
             Y = y;
         }
 
+        //distorts imagedata
         public ImageSprite(Image image, float x, float y, float width, float height)
         {
             this.image = image;
@@ -57,10 +58,10 @@ namespace Engine
 
         public override void Paint(Graphics g)
         {
+            if (Image == null) return;
             g.DrawImage(Image, -width / 2, -height / 2, width, height);
-            //g.DrawImage(Image, 0, 0, width, height);
         }
-
+        
     }
 
 }

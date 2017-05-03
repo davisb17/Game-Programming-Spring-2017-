@@ -6,10 +6,15 @@ using System.Linq;
 
 public class Sprite
 {
-    private Sprite parent = null;
-    private List<Sprite> children = new List<Sprite>();
+    public Sprite parent = null;
     private Queue<Sprite> killQueue = new Queue<Sprite>();
     private Queue<Sprite> addQueue = new Queue<Sprite>();
+
+    private List<Sprite> children = new List<Sprite>();
+    public List<Sprite> Children
+    {
+        get { return children; }
+    }
 
     public float x = 0;
     public float X
@@ -31,24 +36,18 @@ public class Sprite
         get { return scale; }
         set { scale = value; }
     }
-
-    private float rotation = 0;
-    public float Rotation
-    {
-        get { return rotation; }
-        set { rotation = value; }
-    }
-
+    
     //Calls Paint on itself then Render on children
     public void Render(Graphics g)
     {
         Matrix original = g.Transform.Clone();
         g.TranslateTransform(x, y);
         g.ScaleTransform(scale, scale);
-        g.RotateTransform(rotation);
         Paint(g);
-        foreach (Sprite s in children)
+        for (int i = 0; i < children.Count; i++)
         {
+            Sprite s = children.ElementAt(i);
+            if (s == null) continue;
             s.Render(g);
         }
         g.Transform = original;
@@ -64,8 +63,10 @@ public class Sprite
     public void Update()
     {
         Act();
-        foreach (Sprite s in children)
+        for (int i = 0; i < children.Count; i++)
         {
+            Sprite s = children.ElementAt(i);
+            if (s == null) continue;
             s.Update();
         }
     }
@@ -73,8 +74,10 @@ public class Sprite
     //Update Sprite
     public virtual void Act()
     {
-        while (killQueue.Count > 0) Kill(killQueue.Dequeue());
-        while (addQueue.Count > 0) Add(addQueue.Dequeue());
+        
+
+        while (killQueue.Count > 0) KillSprite(killQueue.Dequeue());
+        while (addQueue.Count > 0) AddSprite(addQueue.Dequeue());
 
         //then extending Sprite extends this function
     }
@@ -89,15 +92,18 @@ public class Sprite
         killQueue.Enqueue(s);
     }
 
-    private void Add(Sprite s)
+    private void AddSprite(Sprite s)
     {
         s.parent = this;
         children.Add(s);
+        //Physics Sprites add to list at construction
     }
 
-    private void Kill(Sprite s)
+    private void KillSprite(Sprite s)
     {
-        s.parent = null;
         children.Remove(s);
+        s.parent = null;
+        if (s.GetType() == typeof(Engine.PhysicsSprite) || s.GetType() == typeof(Engine.Bullet))
+            Engine.PhysicsSprite.sprites.Remove((Engine.PhysicsSprite)s);
     }
 }

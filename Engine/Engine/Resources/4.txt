@@ -1,0 +1,10 @@
+9 9
+XXXXXXXXX
+XS     SX       
+XXXX XXXX
+XS      X
+XXXXXX  X
+X      SX
+X   XXXXX
+X      PX
+XXXXXXXXX

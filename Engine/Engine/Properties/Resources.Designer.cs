@@ -63,9 +63,228 @@ namespace Engine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap thing {
+        internal static System.Drawing.Bitmap Block {
             get {
-                object obj = ResourceManager.GetObject("thing", resourceCulture);
+                object obj = ResourceManager.GetObject("Block", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaBullet {
+            get {
+                object obj = ResourceManager.GetObject("LavaBullet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LavaSlime {
+            get {
+                object obj = ResourceManager.GetObject("LavaSlime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5 5
+        ///XXXXX
+        ///XS  X
+        ///XXX X
+        ///XP  X
+        ///XXXXX.
+        /// </summary>
+        internal static string lvl0 {
+            get {
+                return ResourceManager.GetString("lvl0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8 8
+        ///XXXXXXXX
+        ///XS     X
+        ///XXX  X X
+        ///X    X X
+        ///X  XXXSX
+        ///X    XXX
+        ///X  X  PX
+        ///XXXXXXXX.
+        /// </summary>
+        internal static string lvl1 {
+            get {
+                return ResourceManager.GetString("lvl1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8 8
+        ///XXXXXXXX
+        ///XS     X
+        ///XXXX   X
+        ///X S   XX
+        ///X XX   X
+        ///X     SX
+        ///X   PXXX
+        ///XXXXXXXX.
+        /// </summary>
+        internal static string lvl2 {
+            get {
+                return ResourceManager.GetString("lvl2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8 8
+        ///XXXXXXXX
+        ///X    SSX
+        ///X  XXXXX
+        ///XS     X
+        ///XXX S  X
+        ///X   X  X
+        ///X   P XX
+        ///XXXXXXXX.
+        /// </summary>
+        internal static string lvl3 {
+            get {
+                return ResourceManager.GetString("lvl3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9 9
+        ///XXXXXXXXX
+        ///XS     SX       
+        ///XXXX XXXX
+        ///XS      X
+        ///XXXXXX  X
+        ///X      SX
+        ///X   XXXXX
+        ///X      PX
+        ///XXXXXXXXX.
+        /// </summary>
+        internal static string lvl4 {
+            get {
+                return ResourceManager.GetString("lvl4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9 9
+        ///XXXXXXXXX
+        ///X      SX
+        ///X    XXXX
+        ///X     SSX
+        ///X  XXXXXX
+        ///XS     SX
+        ///XXXX XXXX
+        ///X   P   X
+        ///XXXXXXXXX.
+        /// </summary>
+        internal static string lvl5 {
+            get {
+                return ResourceManager.GetString("lvl5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9 9
+        ///XXXXXXXXX
+        ///X L     X
+        ///XXXXX   X
+        ///X      LX
+        ///X     XXX
+        ///X  S    X
+        ///X  X X  X
+        ///X  P    X
+        ///XXXXXXXXX.
+        /// </summary>
+        internal static string lvl6 {
+            get {
+                return ResourceManager.GetString("lvl6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11 11
+        ///XXXXXXXXXXX
+        ///X       L X
+        ///X     XXXXX
+        ///X   L     X
+        ///X  XXX    X
+        ///X L   L   X
+        ///X X   XX  X
+        ///X   S     X
+        ///X   XX    X
+        ///X   P     X
+        ///XXXXXXXXXXX.
+        /// </summary>
+        internal static string lvl7 {
+            get {
+                return ResourceManager.GetString("lvl7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11 11
+        ///XXXXXXXXXXX
+        ///X     LL  X
+        ///X   XXXXXXX
+        ///X    L   LX
+        ///X  X X  XXX
+        ///X    L   LX
+        ///X    X   XX
+        ///X    L  X X
+        ///XXXX X    X
+        ///XP        X
+        ///XXXXXXXXXXX.
+        /// </summary>
+        internal static string lvl8 {
+            get {
+                return ResourceManager.GetString("lvl8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PBullet {
+            get {
+                object obj = ResourceManager.GetObject("PBullet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PChar {
+            get {
+                object obj = ResourceManager.GetObject("PChar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Slime {
+            get {
+                object obj = ResourceManager.GetObject("Slime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SlimeBullet {
+            get {
+                object obj = ResourceManager.GetObject("SlimeBullet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
